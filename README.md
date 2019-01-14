@@ -1,3 +1,3 @@
 # bottomsheetonboarding
-Android Bottom sheet onboarding hop animation sample project
+This is a sample project for hopping a bottom sheet on Android
 
