@@ -8,6 +8,7 @@
         tools:context=".MainActivity">
 
     <LinearLayout
+            android:id="@+id/linearLayoutBottomSheet"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:behavior_peekHeight="70dp"
