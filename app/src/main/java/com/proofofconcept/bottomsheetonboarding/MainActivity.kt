@@ -8,17 +8,20 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private val animationHandler = Handler()
-    private lateinit var animationRunnable: Runnable
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        animationRunnable = Runnable { animationFunction() }
-        animationHandler.post(animationRunnable)
+        animationHandler.post(object : Runnable {
+            override fun run() {
+                hopAnimation()
+                animationHandler.postDelayed(this, 1000)
+            }
+        })
     }
 
-    private fun animationFunction() {
+    private fun hopAnimation() {
         val animation = linearLayoutBottomSheet
             .animate()
             .translationYBy(-40f)
@@ -26,6 +29,5 @@ class MainActivity : AppCompatActivity() {
         animation.withEndAction {
             linearLayoutBottomSheet.animate().translationYBy(40f).duration = 200
         }
-        animationHandler.postDelayed(animationRunnable, 1000)
     }
 }
