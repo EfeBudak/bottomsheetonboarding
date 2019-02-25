@@ -1,5 +1,5 @@
 # bottomsheetonboarding
-This is a sample project for hopping a bottom sheet on Android
+This is a sample project for hopping a bottom sheet on Android.
+Check out the related blog post. https://android.jlelse.eu/android-onboarding-hop-animation-1d1651b87e2c
 
-I know the gif is huge! Sorry for that. The animation part is at the bottom. Scroll down ;)
-<img src="./readmeassets/hopAnimationBottomSheet.gif"/>
+<img src="./readmeassets/hopAnimationBottomSheet.gif" width="250" />
